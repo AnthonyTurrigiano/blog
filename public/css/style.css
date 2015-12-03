@@ -1,0 +1,27 @@
+html{
+    font-size: 100%;
+}
+
+body{
+    font-size: 1em;
+    font-weight: 400;
+    line-heignt: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.list-group-item{
+    border: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

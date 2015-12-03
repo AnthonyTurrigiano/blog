@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- document metadata -->
+        <meta charset="utf-8">
+        <meta name="author" content="Anthony Turrigiano <anthony.turrigiano@gmail.com>">
+        <meta name="description" content="Blog">
+        
+        <!-- document title -->
+        <title>Blog</title>
+        
+        <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        
+    </head>
+    
+    <body data-ng-app="BlogApp" data-ng-controller="BlogCtrl as blog" data-ng-cloak>
+        
+        <!-- page -->
+        <div class="page container-fluid">
+            
+            <header class="page-head row-fluid" role="banner">
+                <div class="container">
+                    <h1 class="page-header text-center">Posts</h1>
+                </div>
+            </header>
+            
+            <!-- content-area -->
+            <div class="content-area row-fluid">
+                <!-- main -->
+                <main class="main col-xs-12 col-sm-12 col-md-12 col-lg-12" role="main">
+                    <div class="table-of-contents col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ul class="list-group">
+                            <li class="list-group-item" data-ng-repeat="post in blog.posts">
+                                <h2>{{post.title}}:</h2>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a data-ng-href="/post/{{post.name}}/" title="Post | {{post.title}}">View Post</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </main> 
+            </div>
+            
+        </div>
+        
+        <!-- scripts -->
+        <script src="./js/vendor/angular.min.js"></script>
+        <script src="./js/app/app.js"></script>
+    </body>
+</html>

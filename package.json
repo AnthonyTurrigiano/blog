@@ -1,0 +1,20 @@
+{
+  "name": "commandline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
+    "nodemon": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
